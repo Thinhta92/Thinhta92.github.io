@@ -52,6 +52,10 @@ a
 	margin-left: 450px;
 	margin-top: 100px;
 }
+.text1 p
+{
+	margin-top: 50px;
+}
 .text1 img
 {
 	width: 10%;
@@ -70,7 +74,7 @@ a
 }
 hr.solid1 {
   border-top: 3px solid #bbb;
-	width: 30px;
+	width: 70px;
 	margin-top: 50px;
 }
 
@@ -83,12 +87,12 @@ hr.solid1 {
 {
 	margin-top: 10px;
 }
-p2
+.background2 p
 {
 	color: darkgray;
 	
 }
-i
+.background2 i
 {
 	padding: 7px;
 	margin-top: 20px;
@@ -125,7 +129,7 @@ i
 	margin-left: 100px;
 	
 }
-p3
+.background3 p
 {
 	margin-left: 100px;
 	float: left;
@@ -484,4 +488,24 @@ hr.solid7 {
 .background10 i
 {
 	padding-top: 30px;
+}
+@media screen and (max-width:414px)
+{
+	img{ width: 100%;	
+	}
+	p{
+		font-size: 9pt;
+	}
+	a
+	{
+		font-size: 5pt;
+	}
+	.overlay-content
+	{
+		font-size: 9pt;
+	}
+	h2{
+		font-size: 15pt;
+		
+	}
 }
