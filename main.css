@@ -5,6 +5,25 @@
 	padding: 0;
 	margin: 0;
 }
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 img
 {
 	width: 100%;
@@ -49,28 +68,31 @@ a
 .text1
 {
 	text-align: left;
-	margin-left: 450px;
+	margin-left: 0px;
 	margin-top: 100px;
 }
 .text1 p
 {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .text1 img
 {
-	width: 10%;
+	width: 30%;
 	opacity: 90%;
 	
 }
 .text1 button
 {
 
-  padding: 5px 10px;
-  width: 15%;
-	margin-top: 50px;
+	height: 30px; 	
+ 	width: 100px;
+	margin-top: 30px;
 	margin-left: 0px;
-	border:double;
-	
+	border: 1px #F7F0F0 solid;
+	border-radius: 1%;
+	background: none;
+	color: white;
+	text-align: center;
 }
 hr.solid1 {
   border-top: 3px solid #bbb;
@@ -96,42 +118,53 @@ hr.solid1 {
 {
 	padding: 7px;
 	margin-top: 20px;
+	font-size: 50px;
+	color: darkgray;
 }
 .background3
 {
 	background-color: whitesmoke;
-	height: 500px;
+	height: 600px;
 }
-.btn-group button {
-  background-color: black; /* Green background */
-  border: 1px solid orange; /* Green border */
-  color: white; /* White text */
-  padding: 30px 30px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  width: 50%;/* Set a width if needed */
-  display: block; /* Make the buttons appear below each other */
-	height: 80px;
-	margin-top: 150px;
-	float: left;
+.Tabmenu
+{
+	flex-direction: column;
+	margin-top: 100px;
+	margin-left: 40px;
+}
+.nav
+{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.nav-link
+{
+	color: white;
+	background: black;
+	border-radius: 0;
+	border: 0.25px #5E5B5B solid;
+	padding: 40px;
+	margin-left: 100px;
+	
+	
+}
+.nav-link:hover
+{
+	background:#EF8B50; !important;
 }
 
-.btn-group button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: orange;
-}
 .text2 h6
 {
-	margin-top: 150px;
-	margin-left: 100px;
+	margin-top: 100px;
+	margin-left: 40px;
 	
 }
 .background3 p
 {
-	margin-left: 100px;
+	margin-left: 40px;
 	float: left;
 	color: darkgray;
 }
@@ -142,17 +175,18 @@ hr.solid1 {
 	
 	
 }
-.text2 button
+.b3 button
 {
  background-color: orange; 
   color: white; 
-  padding: 10px 10px; 
-  cursor: pointer; 
-  width: 20%;
+  height: 40px; 
+  width: 140px;
   display: block;
-	margin-top: 200px;
-	margin-left: 95px;
-	border: 5px solid;
+	border: 1px #C8C8C8 solid;
+	font-size: 20px;
+	margin-left: 120px;
+	
+
  	
 }
 .background4
@@ -166,7 +200,9 @@ hr.solid1 {
 {
 	float: left;
 	border: 1px #514E4E solid;
-	margin-top: 100px;
+	margin-top: 80px;
+	width: 80%;
+	margin-left: 40px;
 }
 .background4 h5
 {
@@ -187,14 +223,22 @@ hr.solid2 {
 }
 .text3 h6
 {
-	margin-top: 24px;
-	margin-left: 18px;
+	margin-top: -25px;
+	margin-left: 80px;
 }
 .text3 i
 {
-	margin-left: 45px;
+	margin-left: 35px;
 	color: orange;
+	width: 30px;
+	height: 30px;
+	border: 1px #CF821A solid;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 6px;
+	
 }
+
 .text3
 {
 	width: 100%
@@ -202,8 +246,8 @@ hr.solid2 {
 .text3 p
 {
 	
-	margin-top: 45px;
-	margin-left: -31px;
+	margin-top: 5px;
+	margin-left: 80px;
 }
 .background5
 {
@@ -215,23 +259,23 @@ hr.solid3 {
   border-top: 3px solid ;
 	width: 70px;
 	margin-top: 20px;
-	margin-left: 150px;
+	
 	color: orange;
 }
 .text4 h5
 {
-	margin-left: 150px;
+	
 	margin-top: 100px
 }
 .text4 p
 {
-	margin-left: 150px;
+	
 	color: darkgray;
 }
 .anh4 img
 {
-	width: 70%;
-	margin-left: 70px;
+	width: 80%;
+	margin-left: 40px;
 	margin-top: 100px;
 	border: 1px #514E4E solid;
 }
@@ -243,28 +287,47 @@ hr.solid3 {
 }
 hr.solid4 {
   border-top: 3px solid ;
-	width: 70px;
+	width: 100%;
 	margin-top: 20px;
-	margin-left: 720px;
+	
 	color: orange;
+	
+	
 }
 .background6 h2
 {
-	margin-top: 150px;
+	margin-top: 50px;
+	text-align: center;
 	
+}
+.background6 p
+{
+	text-align: center;
+	color: darkgray;
 }
 .text5 i
 {
 	color:orange;
 	margin-top: 70px;
+	border:1px #DC9C26 solid;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 25px;
+		
 }
 .text5 h5
 {
 	margin-top: 20px;
+	text-align: center;
 }
 .text5 p
 {
 	margin-top: 20px;
+	text-align: center;
+	
 }
 .background7
 {
@@ -273,13 +336,13 @@ hr.solid4 {
 }
 .background7 h2
 {
-	padding-top: 110px; 
+	padding-top: 110px;
+	text-align: center;
 }
 hr.solid5 {
   border-top: 3px solid ;
-	width: 70px;
+	width: 100%;
 	margin-top: 20px;
-	margin-left: 720px;
 	color: orange;
 }
 
@@ -413,27 +476,36 @@ hr.solid5 {
 }
 hr.solid6 {
   border-top: 3px solid ;
-	width: 70px;
+	width: 100%;
 	margin-top: 30px;
-	margin-left: 720px;
+	
+	
 	color: white;
 }
 .background8 p
 {
 	color:darkgray;
 	margin-top: 30px;
+	text-align: center;
 }
 .background8 h2
 {
 	padding-top: 50px;
+	text-align: center;
 }
 .background8 button
 {
-	 padding: 5px 5px;
-  	width: 15%;
-	margin-top: 100px;
-	margin-left: 650px;
-	border:double;	
+	height: 30px; 	
+ 	width: 100px;
+	margin-top: 50px;
+	
+	border: 1px #F7F0F0 solid;
+	border-radius: 1%;
+	background: none;
+	color: white;
+	
+	
+	
 }
 .background9
 {
@@ -442,9 +514,8 @@ hr.solid6 {
 }
 hr.solid7 {
   border-top: 3px solid ;
-	width: 70px;
+	width: 100%;
 	margin-top: 30px;
-	margin-left: 720px;
 	color: orange;
 }
 .background9 h2
@@ -459,14 +530,14 @@ hr.solid7 {
 {
 	margin-top: 240px;
 }
-.background9 button
+.button9
 {
-	background-color:coral;
-	border-radius: 2px;
-	padding: 7px;
-	margin-left: 700px;
-	margin-top: 50px;
-	color: white;
+	 
+ 	color: white;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 40px;
+	margin-right: 30px;	
 }
 .background9 label
 {
@@ -479,15 +550,21 @@ hr.solid7 {
 	width: 80%;
 	margin-left: 50px;
 }
-.background10
+footer
 {
 	height: 120px;
 	background-color: black;
-	color: darkgray;
+	
 }
-.background10 i
+.icons i
 {
 	padding-top: 30px;
+	color: darkgray
+}
+.copyright
+{
+	color: darkgray;
+	text-align: center;
 }
 @media screen and (max-width:414px)
 {
@@ -495,17 +572,100 @@ hr.solid7 {
 	}
 	p{
 		font-size: 9pt;
+		color: darkgray;
 	}
 	a
 	{
-		font-size: 5pt;
+		font-size: 9pt;
 	}
 	.overlay-content
 	{
 		font-size: 9pt;
 	}
 	h2{
-		font-size: 15pt;
+		font-size: 15pt;	
+	}
+	.logo img
+	{
+		width: 20%;	
+	}
+	.text1 img
+	{
+		width: 30%;
+	}
+	.background2
+	{
+		height: 170px;
+		text-align: center;
+	}
+	h5{
+		font-size: 20pt;
 		
 	}
+	.icons2 i
+	{
+		font-size: 25pt;
+		
+	}
+	.background3
+	{
+		
+		height: 1200px;
+		float: left;
+	}
+	.nav-link
+	{
+		float: left;
+	}
+	.anh3 img
+	{
+		width: 80%;
+		margin-left: 40px;
+	}
+	.background4
+	{
+		height: 800px;
+		float: left;
+	}
+	.background4 img
+	{
+		width: 80%;
+		margin-left: 40px;
+	}
+	.background5
+	{
+		height: 700px;
+		float: left;
+	}
+	.text4
+	{
+		margin-left: 40px;
+	}
+	.background6
+	{
+		height: 900px;
+		float: left;
+	}
+	
+	.background7
+	{
+		height: 2150px;
+		float: left;	
+	}
+	.background8
+	{
+		float: left;
+	}
+	.button8
+	{
+		margin-left: 150px;
+	}
+	.form
+	{
+		height: 800px;
+		float: left;
+	}
+	
+	
+
 }
